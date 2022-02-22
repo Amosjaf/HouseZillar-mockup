@@ -1,39 +1,41 @@
 @font-face {
     font-family: "RobotoSlab";
     src: url(/Fonts/RobotoSlab-Regular.ttf);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: Raleway;
     src: url(/Fonts/Raleway-Medium.ttf);
-  }
+}
 
 .logo-text {
     font-size: 20px;
     background: -webkit-linear-gradient(left, #0CF059, #FAD812);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar {
-  z-index: 1000;
+    z-index: 1000;
 }
 
 .collapse {
-  z-index: 2000;
-  transform: translatey(1rem);
+    transform: translatey(1rem);
+    position: fixed !important;
+    z-index: 999;
 }
 
 .hero-image {
     position: relative;
     height: 95vh;
-      width: 100%; 
+    width: 100%;
 }
 
 @media (max-width: 40rem) {
-  .hero-image {
-    height: 70vh;;
-  }
+    .hero-image {
+        height: 70vh;
+        ;
+    }
 }
 
 .hero-image::after {
@@ -49,14 +51,12 @@
 
 .hero-heading {
     font-family: RobotoSlab;
-  color: #e5e9f0;
-  
-
+    color: #e5e9f0;
 }
 
 .hero-p {
     font-family: Raleway;
-  }
+}
 
 .explore-btn {
     box-shadow: 0 2px 3px black;
@@ -65,41 +65,40 @@
 
 .explore-btn:hover {
     transform: translateY(-2px);
-  box-shadow: 0 4px 3px black;
+    box-shadow: 0 4px 3px black;
 }
 
 .gallery-text {
-  font-family: RobotoSlab;
+    font-family: RobotoSlab;
 }
 
 .services-section {
-  background-color: #f1f3f5;
-  padding-bottom: 5rem;
+    background-color: #f1f3f5;
+    padding-bottom: 5rem;
 }
 
 p {
-  font-family: Raleway;
+    font-family: Raleway;
 }
 
 h3 {
-  font-family: RobotoSlab;
+    font-family: RobotoSlab;
 }
 
 .fa-solid {
-  font-size: 5rem;
-  color: #3b4252;
-  margin-left: 6rem;
-  margin-bottom: 2rem;
-  padding-top: 3.5rem;
+    font-size: 5rem;
+    color: #3b4252;
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+    padding-top: 3.5rem;
 }
 
 @media (max-width: 20rem) {
-  .hero-p {
-    font-size: 0.9rem;
-    text-align: center;
-    max-width: 70%;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-
-  }
+    .hero-p {
+        font-size: 0.9rem;
+        text-align: center;
+        max-width: 70%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
 }
