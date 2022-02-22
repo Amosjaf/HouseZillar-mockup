@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "RobotoSlab";
+    src: url(/Fonts/RobotoSlab-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Raleway;
+    src: url(/Fonts/Raleway-Medium.ttf);
+  }
+
+.logo-text {
+    font-size: 20px;
+    background: -webkit-linear-gradient(left, #0CF059, #FAD812);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+
+
+.hero-image {
+    position: relative;
+    height: 95vh;
+      width: 100%; 
+}
+
+@media (max-width: 40rem) {
+  .hero-image {
+    height: 70vh;;
+  }
+}
+
+.hero-image::after {
+    background-image: url("/Images/background-img4.jpg");
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    opacity: 0.9;
+    background-size: cover;
+    z-index: -1;
+}
+
+.hero-heading {
+    font-family: RobotoSlab;
+  color: #e5e9f0;
+  
+
+}
+
+.hero-p {
+    font-family: Raleway;
+  }
+
+.explore-btn {
+    box-shadow: 0 2px 3px black;
+    margin-left: 5.5rem;
+}
+
+.explore-btn:hover {
+    transform: translateY(-2px);
+  box-shadow: 0 4px 3px black;
+}
+
+.gallery-text {
+  font-family: RobotoSlab;
+}
+
+.services-section {
+  background-color: #f1f3f5;
+  padding-bottom: 5rem;
+}
+
+p {
+  font-family: Raleway;
+}
+
+h3 {
+  font-family: RobotoSlab;
+}
+
+.fa-solid {
+  font-size: 5rem;
+  color: #3b4252;
+  margin-left: 6rem;
+  margin-bottom: 2rem;
+  padding-top: 3.5rem;
+}
+
+@media (max-width: 20rem) {
+  .hero-p {
+    font-size: 0.9rem;
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+
+  }
+}
